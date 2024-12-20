@@ -15,11 +15,11 @@ use log::warn;
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Args {
-    #[arg(short, long, default_value = "Speaker")]
+    #[arg(short, long, default_value = "Computer")]
     name: String,
     #[arg(short, long, default_value = "credentials.json")]
     path: String,
-    #[arg(short, long, default_value = "speaker")]
+    #[arg(short, long, default_value = "computer")]
     class: String,
 }
 
